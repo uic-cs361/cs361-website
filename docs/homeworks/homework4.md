@@ -52,9 +52,9 @@ typedef struct chunk {
 
 In this homework, we build a basic, conservative garbage collector for C programs. Starting from the set of root pointers present in the stack and global variables, we traverse the “object graph” (in the case of malloc, a chunk graph) to find all chunks reachable from the root. These are marked using the third lowest order bit in the size field of each chunk. We have implemented several helpful functions for you ranging from checking for marked chunks to navigation of the heap. Please read the skeleton code to get a feel for what is available and what you should be doing. Ultimately, you will need to implement the sweeping functionality of the garbage collector, the pointer-confirmation functionality, and a portion of the marking functionality.
 
-As of the release of this assignment, we have not covered the concepts related to garbage collection in class; to start on this homework, take a look at section 9.10, and 9.10.2 specifically. The week 9 lab will help with getting started on the assignment as well.
+To start on this homework, take a look at section 9.10, and 9.10.2 specifically. This week's lab (Lab 7) will help with getting started on the assignment as well.
 
-The skeleton code in the public git repository provides supporting code for finding the limits of the global variable area in memory, as well as for the stack and heap areas. It also demonstrates very basic marking and sweeping. Your task is to complete the garbage collector, so that it frees all garbage, and leaves every other chunk intact. To compile the template, type `make`, and run it with `./hw4`.
+The skeleton code in the git repository provides supporting code for finding the limits of the global variable area in memory, as well as for the stack and heap areas. It also demonstrates very basic marking and sweeping. Your task is to complete the garbage collector, so that it frees all garbage, and leaves every other chunk intact. To compile the template, type `make`, and run it with `./hw4`.
 
 Note that all of the tests have descriptions in `main.c`! Use these to give you some hints on what kind of functionality your garbage collector should have. Also, take a look at `memlib.c` and `memlib.h` to get a feel for what kinds of memory operations you have available to you.
 
@@ -66,7 +66,7 @@ Runtime performance is not a major goal for this homework. However if your progr
 
 **You should only make changes to `hw4.c` in the areas marked TODO.**
 
-Finally, *make sure you do not output anything extra in your implementations*. This will break the autograder.
+Finally, *make sure your code is error/warning free and does not output anything extra* as it can break the autograder.
 
 ## Grading
 
