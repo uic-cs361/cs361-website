@@ -11,7 +11,8 @@ module.exports = {
             "homeworks/homework0",
             "homeworks/homework1",
             "homeworks/homework2",
-            "homeworks/homework3"
+            "homeworks/homework3",
+            "homeworks/homework4"
         ]
     },
     {
