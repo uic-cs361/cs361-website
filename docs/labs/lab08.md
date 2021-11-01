@@ -8,7 +8,7 @@ gradescope_quiz: https://www.gradescope.com/courses/293389/assignments/1622295
 import Link from '@docusaurus/Link';
 import site from '@site/course.json'
 
-## Testing GC Code
+<!-- ## Testing GC Code
 
 1.  We give you two programs to use to test the code you write in `hw4.c`, `hw4-library/main_debug.c` and `main.c`.
 
@@ -42,13 +42,13 @@ You will also need to edit the path for hw4.h in debug_main.c from `hw4.h` to `.
     information about the chunk every time it is called. Note that we
     provide a `my_free` method with similar print statements - in order to use this, you will need to call `my_free` instead of `free` in your `hw4.c` code. (You will need to change it back to `free` to work with `main.c`.) Using these methods can be very helpful when you can't figure out what is happening with your code.
 
-5.  Answer the Gradescope question on `my_malloc`.
+5.  Answer the Gradescope question on `my_malloc`. -->
 
 ## Testing: main.c
 
-1.  Now let's look at the `main` method in `main.c`. It starts by
-    running the same allocated and deallocate tests as in 
-    `debug_main.c`. Then, we see this code:
+1.  Let's look at the `main` method in `main.c`. It starts by
+    running the simple allocated and deallocate tests. 
+    Then, we see this code:
     
     ```c
     /* allocations which all point to each other. 
@@ -132,7 +132,7 @@ You will also need to edit the path for hw4.h in debug_main.c from `hw4.h` to `.
         }
         return ptr;
     }
-```
+    ```
 7.  What should be allocated/free when we call the garbage collector at
     round 50? How about when we call it after the method returns?
 
@@ -154,14 +154,14 @@ You will also need to edit the path for hw4.h in debug_main.c from `hw4.h` to `.
         }
         return ptr;
     }
-```
+    ```
 10. Note that in this code, the returned pointer from the recursive call
     is stored on the heap, not the stack. Since we don't free it, it
     should still be on the heap after the function returns. What should
     be allocated/free after we call `gc` within this function? What 
     about when we call `gc` after it returns?
 
-11. Answer the questions on <Link to={frontMatter.gradescope_quiz}>Gradescope</Link>.
+11. Answer the remaining questions on <Link to={frontMatter.gradescope_quiz}>Gradescope</Link>.
 
 
 ## Total grade calculation
