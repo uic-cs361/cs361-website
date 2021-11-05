@@ -1,6 +1,11 @@
 
 module.exports = {
   docs: [
+    {
+        "type": "category",
+        "label": "exams",
+        "items": []
+    },
     "1.homepage",
     "2.schedule",
     "3.syllabus",
@@ -12,7 +17,8 @@ module.exports = {
             "homeworks/homework1",
             "homeworks/homework2",
             "homeworks/homework3",
-            "homeworks/homework4"
+            "homeworks/homework4",
+            "homeworks/homework5"
         ]
     },
     {
