@@ -6,7 +6,7 @@ due:
     date: 2021-11-16T23:59:59-6:00
     description: 'Assignment #5 due'
 date: 2021-11-04
-github_link: https://classroom.github.com/a/TPjtM4zZ
+github_link: https://classroom.github.com/a/sMnT5xnJ 
 student_ports_link: https://docs.google.com/spreadsheets/d/1H5mTka0nY6K9PSaPWbSORM-vNSawGXW5ofVsP-zD5uk/edit?usp=sharing
 ---
 import Link from '@docusaurus/Link';
@@ -34,7 +34,7 @@ messages and then send them to all listening clients.
 In a modern web application, rather than simply serving files, these different
 actions are called **routes**. The routes in our application are:
 
-1. `GET /index.html` just sends the static index file.
+1. `GET /index.html` or `GET /` just sends the static index file.
 2. `GET /listen` set up a "server-sent events" connection, where newly received
    messages are sent.
 3. `POST /speak` the web browser makes this request when a user wants to send a
@@ -71,7 +71,7 @@ should be accumulated into `requestbuf` for that specific client.
 
 ## Suggested strategy
 
-One of the TODO solutions are 4 and 29 lines long respectively - the vast majority of
+The vast majority of
 the difficulty in this assignment is understanding what the student needs to do,
 understanding what the skeleton code does, and then using the helper functions
 already written to add the correct code. The skeleton code itself is based off
@@ -85,7 +85,14 @@ connections.
 
 ## Grading Rubric
 
-This assignment is worth **10 points** in total.
+The completed assignment should be turned in via Gradescope as with other homework assignments. 
+Test cases on autograder includes getting a simple server working that receives fully formed
+and easy to interpret requests as well as handling correct but oddly sent requests. 
+Note that you are responsible for writing your own test cases. 
+As always, please test your code before turning it in and do not use the autograder 
+as a debugging tool.
+
+<!-- This assignment is worth **10 points** in total.
 
 * **5 points** for getting a simple server working that receives fully formed
   easy to interpret requests.
@@ -94,16 +101,17 @@ This assignment is worth **10 points** in total.
 Grading will be done automatically using a script. We will publish this script
 after grading has completed; you are responsible for writing your own test
 cases. **Publicly sharing valid testing scripts with other students will earn
-extra credit in the course**.
+extra credit in the course**. -->
 
 
 ## How to run your program
 There are two ways to run and test your code:
-1. Use <Link to={frontMatter.student_ports_link}>this spreadsheet</Link> to find your port
-   number, which is unique to you in order to avoid collisions. Use this port
-   number to run the webserver on `systemsX`.
-2. The `devcontainer.json` has settings to forward a port from the container to
-   your local machine. If you wish to change the forwarded port, you can change
+1. If you use `systemsX` to develope your code: Use <Link to={frontMatter.student_ports_link}>this spreadsheet</Link> 
+   to find your port number, which is unique to you in order to avoid collisions. You **must** use this port number 
+   to run the webserver on `systemsX`.
+2. If you use devcontainer: The `devcontainer.json` has settings to forward a 
+   port from the container to your local machine. Currently this port is set to `5000`.
+   If you wish to change the forwarded port, you can change
    the port number in line `"forwardPorts": [<port-number>]`. You can also
    ctrl+click on the http link that is printed to the console to open up a
    browser to that link.
