@@ -2,7 +2,7 @@
 title: Lab 9 
 description: Socket Programming
 layout: default
-date: 2021-11-08
+date: 2021-11-08T17:00:00-6:00
 # notes gets passed through markdownify
 github_link: https://classroom.github.com/a/sMnT5xnJ
 ---
@@ -166,7 +166,7 @@ import site from '@site/course.json'
     locally, you can do so by connecting to `systems1` like so:
 
     ```
-    ssh -L 33000:localhost:33000 ckanich@systems1.cs.uic.edu
+    ssh -L 33000:localhost:33000 netid@systems1.cs.uic.edu
     ```
 
     And then as long as that SSH session is connected, there is a "tunnel" that sends any connections made to your local computer at port 33000 on `systems1.cs.uic.edu`
