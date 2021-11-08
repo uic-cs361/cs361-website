@@ -34,7 +34,6 @@ import site from '@site/course.json'
 
 1.  There is an excellent guide to network programming at
     http://beej.us/guide/bgnet/. You should definitely read this guide.
-    Go read it now.
 
 2.  Open `server.c` and locate the main function. We will go through the
     important steps that this code takes to set up a listening server socket.
