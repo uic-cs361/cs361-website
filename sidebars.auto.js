@@ -18,7 +18,8 @@ module.exports = {
             "homeworks/homework2",
             "homeworks/homework3",
             "homeworks/homework4",
-            "homeworks/homework5"
+            "homeworks/homework5",
+            "homeworks/homework6"
         ]
     },
     {
@@ -32,7 +33,9 @@ module.exports = {
             "labs/lab05",
             "labs/lab06",
             "labs/lab07",
-            "labs/lab08"
+            "labs/lab08",
+            "labs/lab09",
+            "labs/lab10"
         ]
     },
     {
