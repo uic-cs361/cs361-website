@@ -93,3 +93,8 @@ on Gradescope. Your program should be able to pass all the tests. This is to giv
 * http://pages.cs.wisc.edu/~travitch/pthreads_primer.html
 
 * https://docs.oracle.com/cd/E19455-01/806-5257/6je9h032r/index.html
+
+
+## Due Date
+
+<>This assignment is due {new Date(frontMatter.due.date).toLocaleString('en-us')} in the {Intl.DateTimeFormat().resolvedOptions().timeZone} time zone. See the <Link to="/syllabus">syllabus</Link> for the late turnin policy.</>
