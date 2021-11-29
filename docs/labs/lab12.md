@@ -112,8 +112,8 @@ clean:
 
 | Task | Points |
 |---|---|
-| Turn in the Gradescope assignment | 7 points |
-| Total points | 7 points |
+| Turn in the Gradescope assignment | 5 points |
+| Total points | 5 points |
 
 
 ## Clues for HW6
